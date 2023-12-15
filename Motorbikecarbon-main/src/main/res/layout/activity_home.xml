@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/img"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motorbike Carbon Footprint "
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/black"
+        />
+
+    <!-- Mileage -->
+    <TextView
+        android:id="@+id/mileage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mileage:"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/title"
+        android:layout_marginTop="26dp"
+        android:layout_marginStart="19dp" />
+
+    <EditText
+        android:id="@+id/editmileage"
+        android:layout_width="121dp"
+        android:layout_height="48dp"
+        android:layout_toEndOf="@id/mileage"
+        android:layout_below="@id/title"
+        android:layout_marginTop="20dp"
+        android:inputType="numberDecimal"
+        android:hint="0"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:padding="8dp"
+        android:layout_marginStart="18dp" />
+
+    <Spinner
+        android:id="@+id/spinnermileage"
+        android:layout_width="121dp"
+        android:layout_height="48dp"
+        android:layout_toEndOf="@id/editmileage"
+        android:layout_below="@id/title"
+        android:layout_marginTop="20dp"
+        android:inputType="numberDecimal"
+        android:hint="0"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:padding="8dp"
+        android:layout_marginStart="20dp" />
+
+    <!--select type-->
+
+    <Spinner
+    android:id="@+id/spinnerselect"
+    android:layout_width="373dp"
+    android:layout_height="48dp"
+    android:layout_marginStart="19dp"
+    android:layout_below="@id/mileage"
+    android:layout_marginTop="35dp"
+    android:inputType="numberDecimal"
+    android:textColor="@color/black"
+    android:hint="0"
+    android:background="@color/white"
+    android:padding="8dp"/>
+
+    <!--efficiency-->
+
+    <TextView
+        android:id="@+id/efficiency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or enter efficiency:"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/spinnerselect"
+        android:layout_marginTop="26dp"
+        android:layout_marginStart="19dp" />
+
+    <EditText
+        android:id="@+id/editefficiency"
+        android:layout_width="174dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/efficiency"
+        android:layout_marginTop="20dp"
+        android:inputType="numberDecimal"
+        android:hint="0"
+        android:background="@color/white"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="18dp" />
+
+    <Spinner
+        android:id="@+id/spinnerefficiency"
+        android:layout_width="174dp"
+        android:layout_height="48dp"
+        android:layout_toEndOf="@id/editefficiency"
+        android:layout_below="@id/efficiency"
+        android:layout_marginTop="20dp"
+        android:inputType="numberDecimal"
+        android:hint="0"
+        android:background="@color/white"
+        android:padding="8dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"/>
+
+    <!--Calculator-->
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editefficiency"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#B0E0E6"
+        android:text="Calculate"
+        android:textColor="@color/black"/>
+
+
+</RelativeLayout>

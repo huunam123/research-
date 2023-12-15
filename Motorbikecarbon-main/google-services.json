@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "2402336425",
+    "project_id": "motorbike-carbon",
+    "storage_bucket": "motorbike-carbon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2402336425:android:605dd014fab654f8e3b3b8",
+        "android_client_info": {
+          "package_name": "com.example.motorbikecarbonfootprintcalculator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGUcgpvFxZhqQbM6_xrBlOt965AN4D8sA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
